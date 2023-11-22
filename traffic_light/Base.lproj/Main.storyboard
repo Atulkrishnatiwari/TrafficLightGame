@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="K0X-df-9ZY">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trafficLight" translatesAutoresizingMaskIntoConstraints="NO" id="47L-23-4fE">
+                                <rect key="frame" x="20" y="92" width="390" height="155"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="155" id="T7p-sJ-L4b"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pbp-7R-fMR">
+                                <rect key="frame" x="105" y="680" width="220" height="196"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Pbp-7R-fMR" secondAttribute="height" multiplier="55:49" id="jQY-SN-kQb"/>
+                                    <constraint firstAttribute="width" secondItem="Pbp-7R-fMR" secondAttribute="height" multiplier="55:49" id="yDl-WK-zc8"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Start">
+                                    <backgroundConfiguration key="background" image="stopButton"/>
+                                    <fontDescription key="titleFontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="50"/>
+                                    <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startAndStopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rkH-Ze-U8g"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBu-K2-Jtc">
+                                <rect key="frame" x="10" y="333" width="410" height="159"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="90"/>
+                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="3" height="3"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pbp-7R-fMR" secondAttribute="trailing" constant="105" id="71i-Yj-3RB"/>
+                            <constraint firstItem="K0X-df-9ZY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7fM-iY-1Dd"/>
+                            <constraint firstAttribute="bottom" secondItem="Pbp-7R-fMR" secondAttribute="bottom" constant="56" id="Ab2-Ul-mmT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="47L-23-4fE" secondAttribute="trailing" constant="20" id="E5v-c2-Lxe"/>
+                            <constraint firstItem="47L-23-4fE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="92" id="NcY-Kl-HM8"/>
+                            <constraint firstItem="IBu-K2-Jtc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Och-4S-qmU"/>
+                            <constraint firstItem="K0X-df-9ZY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="PBg-Wl-RY0"/>
+                            <constraint firstItem="IBu-K2-Jtc" firstAttribute="top" secondItem="47L-23-4fE" secondAttribute="bottom" constant="86" id="RTw-UA-unR"/>
+                            <constraint firstItem="47L-23-4fE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="RgX-0i-4eh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IBu-K2-Jtc" secondAttribute="trailing" constant="10" id="SQr-Gu-uat"/>
+                            <constraint firstItem="K0X-df-9ZY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="b4j-KW-bUC"/>
+                            <constraint firstAttribute="bottom" secondItem="K0X-df-9ZY" secondAttribute="bottom" id="gji-as-EEW"/>
+                            <constraint firstItem="Pbp-7R-fMR" firstAttribute="top" secondItem="IBu-K2-Jtc" secondAttribute="bottom" constant="188" id="rEl-Lm-yzW"/>
+                            <constraint firstItem="Pbp-7R-fMR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="105" id="wQR-HA-Sz0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="IBu-K2-Jtc" id="ToK-AW-xcT"/>
+                        <outlet property="startButtonOutlet" destination="Pbp-7R-fMR" id="4mE-m2-H5P"/>
+                        <outlet property="trafficLight" destination="47L-23-4fE" id="hty-r4-mYl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="161.86046511627907" y="-149.35622317596568"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="1600" height="900"/>
+        <image name="stopButton" width="1000" height="1000"/>
+        <image name="trafficLight" width="1500" height="600"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
